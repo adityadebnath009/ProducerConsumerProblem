@@ -1,4 +1,4 @@
-package producerConsumer;
+package producerConsumer.singleSlot;
 
 public class Buffer {
     private int data;

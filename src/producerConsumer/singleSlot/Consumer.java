@@ -1,5 +1,5 @@
-package producerConsumer;
-import producerConsumer.Producer;
+package producerConsumer.singleSlot;
+
 public class Consumer implements Runnable{
 
     Buffer buffer;
@@ -16,7 +16,7 @@ public class Consumer implements Runnable{
                 while(true)
                 {
                     int value = buffer.consume();
-                    if(value==Producer.POISON)
+                    if(value== Producer.POISON)
                     {
                         System.out.println(Thread.currentThread().getName()+" receives poison, stooped.");
                         break;

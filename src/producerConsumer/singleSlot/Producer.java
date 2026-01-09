@@ -1,4 +1,4 @@
-package producerConsumer;
+package producerConsumer.singleSlot;
 
 public class Producer implements Runnable{
     Buffer buffer;
