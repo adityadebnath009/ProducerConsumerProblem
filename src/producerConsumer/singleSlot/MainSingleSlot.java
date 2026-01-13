@@ -7,7 +7,7 @@ public class MainSingleSlot {
         Buffer buffer = new Buffer();
 
         int producers = 1;
-        int consumers = 5;
+        int consumers = 11;
 
         List<Thread> producerThreads = new ArrayList<>();
 
@@ -27,6 +27,7 @@ public class MainSingleSlot {
         for (Thread p : producerThreads) {
             p.join();
         }
+        System.out.println("PRODUCER DONE");
 
 
         for (int i = 0; i < consumers; i++) {
